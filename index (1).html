@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f4f7ff" />
+  <title>Exam Countdown | Grade 5 & Grade 7</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at top left,#e4edff 0,transparent 50%),linear-gradient(135deg,#f8faff,#f2f6ff); color: #1c2d50; display:grid;place-items:center; padding:26px 16px; }
+    main { max-width: 820px; width: 100%; }
+    header { text-align:center; margin-bottom:30px; }
+    .eyebrow { text-transform:uppercase; letter-spacing: .2em; font-weight:700; font-size:12px; color:#5478b7; }
+    h1 { font-size:clamp(34px,5.5vw,52px); letter-spacing:-.045em; margin:10px 0; }
+    header p { color:#63748d; font-size:16px; margin:0; line-height:1.6; }
+    .cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .card { background:#fff; border:1px solid #e4eaf6; box-shadow: 0 14px 35px rgba(44,75,132,.08); border-radius:24px; padding:30px; display:flex; flex-direction:column; text-decoration:none; color:inherit; min-height:280px; transition:transform .18s ease,box-shadow .18s ease; }
+    .card:hover { transform:translateY(-4px); box-shadow: 0 20px 42px rgba(44,75,132,.13); }
+    .card:focus-visible { outline:3px solid #487fe1; outline-offset:5px; }
+    .icon { width:56px;height:56px;border-radius:17px;display:grid;place-items:center;font-size:27px;margin-bottom:20px; }
+    .blue .icon { background:#e7f0ff; }
+    .purple .icon { background:#f1eaff; }
+    h2 { font-size:28px;margin:0 0 9px;letter-spacing:-.03em; }
+    .card p { color:#70809a;font-size:15px;line-height:1.6;margin:0; }
+    .cta { margin-top:auto; padding-top:25px; font-weight:700; color:#2863ca; display:flex;align-items:center;gap:8px; }
+    .purple .cta { color:#774bc5; }
+    footer { color:#7d8aa0;text-align:center;font-size:13px;margin-top:28px;line-height:1.6; }
+    @media(max-width:600px) { .cards{grid-template-columns:1fr} .card{min-height:230px;padding:25px;} }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">Study planner · 2026</div>
+      <h1>Exam Countdown</h1>
+      <p>Choose your grade to view your exam schedule, revision notes, and progress.</p>
+    </header>
+    <nav class="cards" aria-label="Choose grade">
+      <a class="card blue" href="./Grade5_Exam_Countdown_2026.html">
+        <div class="icon" aria-hidden="true">📘</div>
+        <h2>Grade 5</h2>
+        <p>Exam dates, countdown, revision checklists and study progress.</p>
+        <span class="cta">Open Grade 5 <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="card purple" href="./Grade7_Exam_Countdown_2026.html">
+        <div class="icon" aria-hidden="true">📚</div>
+        <h2>Grade 7</h2>
+        <p>Exam dates, countdown, revision checklists and study progress.</p>
+        <span class="cta">Open Grade 7 <span aria-hidden="true">→</span></span>
+      </a>
+    </nav>
+    <footer>Keep your three HTML files in the same GitHub repository folder.</footer>
+  </main>
+</body>
+</html>
